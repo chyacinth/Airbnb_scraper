@@ -58,8 +58,8 @@ cities = [
 ]
 
 if __name__ == '__main__':    
-    start = sys.argv[1]
-    end = sys.argv[2]
+    start = int(sys.argv[1])
+    end = int(sys.argv[2])
     cd_command = 'cd /Users/hyacinth/workspace/AirbnbScraper'
     print(cd_command)
     process = subprocess.Popen(cd_command, shell=True, stdout=subprocess.PIPE)
