@@ -20,6 +20,8 @@ if __name__ == '__main__':
                     input_lists[i]='[\n'+input_lists[i]
         
                 json_str_list += json.loads(input_lists[i])
+        else: 
+            json_str_list = input_str
 
     print(len(json_str_list))
 
