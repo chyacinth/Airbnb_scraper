@@ -2,7 +2,6 @@ import json
 import sys
 import pandas as pd
 import pprint
-from tabulate import tabulate
 
 if __name__ == '__main__':
     input_file = sys.argv[1]
