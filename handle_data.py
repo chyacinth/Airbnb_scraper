@@ -60,10 +60,10 @@ cities = [
 if __name__ == '__main__':    
     start = int(sys.argv[1])
     end = int(sys.argv[2])
-    cd_command = 'cd /Users/hyacinth/workspace/AirbnbScraper'
-    print(cd_command)
-    process = subprocess.Popen(cd_command, shell=True, stdout=subprocess.PIPE)
-    process.wait()
+    #cd_command = 'cd /Users/hyacinth/workspace/AirbnbScraper'
+    #print(cd_command)
+    #process = subprocess.Popen(cd_command, shell=True, stdout=subprocess.PIPE)
+    #process.wait()
 
     command = "scrapy crawl listing -a query='{city}' -o '{city}.json'"
     command2 = "python convert_json.py '{city}.json'"
